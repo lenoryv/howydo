@@ -1,0 +1,33 @@
+{
+    "name": "howydo",
+    "version": "1.0.0",
+    "description": "A website to help students in their school work with tips and academic resources available on the web.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leor0104/howydo.git"
+    },
+    "keywords": [],
+    "author": "Luis Enrique Ortiz Rivera",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leor0104/howydo/issues"
+    },
+    "homepage": "https://github.com/leor0104/howydo#readme",
+    "dependencies": {
+        "next": "^12.1.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@types/react": "^17.0.40",
+        "typescript": "^4.6.2"
+    }
+}
