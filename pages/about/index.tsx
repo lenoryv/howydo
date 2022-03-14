@@ -1,9 +1,12 @@
 import Layout from "@components/Layout/Layout";
+import StylePage from "@components/StylePage/StylePage";
 
 const AboutPage = () => {
     return (
       <Layout>
-        <div>About</div>
+        <StylePage>
+          About
+        </StylePage>
       </Layout>
       )
 }
