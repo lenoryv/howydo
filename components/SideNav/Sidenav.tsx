@@ -7,6 +7,7 @@ function Sidenav() {
         <div className={styles.sidenav}>
             <a href="/new">New</a>
             <a href="/new">Presentaciones</a>
+            <a href="/new">Tips</a>
         </div>
     )
 }
