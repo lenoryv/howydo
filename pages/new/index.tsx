@@ -2,12 +2,12 @@ import Card from "@components/Card/Card";
 import Layout from "@components/Layout/Layout";
 import StylePage from "@components/StylePage/StylePage";
 
-const New = () => {
+function New() {
     return (
         <Layout>
             <StylePage>
-                <Card/>
+                <Card />
             </StylePage>
-        </Layout>)
+        </Layout>);
 }
 export default New;

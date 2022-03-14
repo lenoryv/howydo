@@ -1,10 +1,10 @@
 import Layout from "@components/Layout/Layout"
 
 
-const HomePage = () => {
+function HomePage() {
   return (
     <Layout>
-        Hola Mundo
+      Hola Mundo
     </Layout>
   )
 }
