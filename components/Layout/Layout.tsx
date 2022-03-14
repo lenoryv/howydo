@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '@components/Navbar/Navbar'
-import Sidenav from '@components/SideNav/Sidenav'
+import Sidenav from '@components/Sidenav/Sidenav'
 
 type LayoutProps = {
   children?: React.ReactNode
