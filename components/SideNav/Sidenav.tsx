@@ -1,7 +1,7 @@
 import styles from '@components/Sidenav/Sidenav.module.css'
 import { useRouter } from 'next/router';
 
-function Sidenav() {
+const Sidenav =() => {
     const { pathname } = useRouter()
     return (
         <div className={styles.sidenav}>
