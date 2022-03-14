@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <ul className={styles.navbar} id="myNavbar">
             <div>
-                Howydo
+                HOWYDO
             </div>
             <li>
                 <a className={pathname === "/" ? styles.active : ""} href="/">
