@@ -1,10 +1,10 @@
 .card {
-    width: 45%
+    width: 55%
 }
 
 .card hr {
     color: gray;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .card h3 {
@@ -27,16 +27,20 @@
 }
 
 .button {
-    height: 30px;
+    height: 32px;
     padding-left: 16px;
     padding-right: 16px;
     width: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     border: 0.5px solid gray;
     ;
+}
+
+.button div {
+    display: flex;
 }
 
 .button span {
@@ -44,5 +48,5 @@
     text-align: center;
     font-size: 0.8em;
     font-family: 'Open Sans';
-    color: black;
+    color: gray;
 }

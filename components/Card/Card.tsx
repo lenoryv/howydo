@@ -3,6 +3,7 @@ import styles from '@components/Card/Card.module.css';
 
 const articles = [
     {
+        id: 0,
         title: '¿Cómo hacer una presentación?',
         date: '13 de marzo de 2022',
         category: ['presentaciones', 'new'],
@@ -11,20 +12,23 @@ const articles = [
     }
 ];
 
-
+const arrowIcon = '/icons/arrow-24.png';
 
 function Card() {
     return (
         <React.Fragment>
             {articles.map((article) => {
                 return (
-                    <div className={styles.card}>
+                    <div key={article.id}
+                    className={styles.card}>
                         <h2>{article.title}</h2>
                         <h3>{article.date}</h3>
                         <p>{article.description}</p>
                         <div className={styles.button}>
-                            <span>Leer más</span>
-                            <div>+</div>
+                            <span>Continuar leyendo</span>
+                            <div>
+                                <img src={arrowIcon} width={16} height={16}/>
+                            </div>
                         </div>
                         <hr></hr>
                     </div>
