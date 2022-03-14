@@ -5,7 +5,7 @@ type PageProps = {
     children?: React.ReactNode
 }
 
-let value = '0px';
+let value = '10px';
 
 const StylePage = ({ children }: PageProps) => (
 
