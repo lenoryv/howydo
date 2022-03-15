@@ -23,7 +23,7 @@ function Banner() {
   return (
     <div className={styles.banner}>
             <div className={styles.sponsors}>
-        Add Colaborator or Auspiciants
+        + Add Colaborator or Auspiciants
       </div>
       <div className={styles.hype}>
         <CardHype img={hype} />
