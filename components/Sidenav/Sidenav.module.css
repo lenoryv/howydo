@@ -1,13 +1,21 @@
 .sidenav {
     height: 100%;
-    width: 240px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #393E46;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 80px;
+    padding-top: 60px;
+}
+
+.active {
+    background-color: white;
+    color: #393E46;
+    margin-left: 24px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .sidenav a {

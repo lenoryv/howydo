@@ -5,9 +5,12 @@ function Sidenav() {
     const { pathname } = useRouter();
     return (
         <div className={styles.sidenav}>
-            <a href="/new">Nuevos</a>
-            <a href="/new">Presentaciones</a>
-            <a href="/new">Tips</a>
+            <a className={pathname === "/new" ? styles.active : ''} href="/new">
+                Nuevos
+            </a>
+            <a className={pathname === "/tips" ? styles.active : ''} href="/tips">
+                Tips
+            </a>
             <a href="/new">Plantillas</a>
         </div>
     );
