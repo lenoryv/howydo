@@ -1,4 +1,5 @@
 import styles from '@components/CardHype/CardHype.module.css'
+import Image from 'next/Image'
 
 type CardProps = {
     img: string
@@ -7,7 +8,7 @@ type CardProps = {
 function CardHype({ img }: CardProps) {
     return (
         <div className={styles.card}>
-            <img src={img} width={280} height={280} />
+            <Image src={img} width={280} height={280} />
             <div className={styles.buttonCard}>
                 <span>View</span>
             </div>
