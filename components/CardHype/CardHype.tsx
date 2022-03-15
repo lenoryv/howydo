@@ -1,5 +1,5 @@
 import styles from '@components/CardHype/CardHype.module.css'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 type CardProps = {
     img: string
