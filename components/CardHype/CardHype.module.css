@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.buttonCard {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background-color: #16C79A;
+    width: 40%;
+    height: 40px;
+    border-radius: 6px;
+    top: 348px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCard span {
+    font-size: 0.7em;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
