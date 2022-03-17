@@ -1,29 +1,18 @@
 import React from "react";
 import styles from '@components/Card/Card.module.css';
 
-const articles = [
-    {
-        id: 0,
-        title: '¿Cómo hacer una presentación?',
-        date: '13 de marzo de 2022',
-        category: ['presentaciones', 'new'],
-        description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'+ 
-        'Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor. '
-    }
-];
-
 const arrowIcon = '/icons/arrow-24.png';
 
-function Card() {
+function Card({howydos}) {
     return (
         <React.Fragment>
-            {articles.map((article) => {
+            {howydos.map((howydo) => {
                 return (
-                    <div key={article.id}
+                    <div key={howydo.id}
                     className={styles.card}>
-                        <h2>{article.title}</h2>
-                        <h3>{article.date}</h3>
-                        <p>{article.description}</p>
+                        <h2>{howydo.properties.Name.title[0].plain_text}</h2>
+                        <h3>{howydo.properties.Date.date.start}</h3>
+                        <p>{howydo.properties.Description.rich_text[0].plain_text}</p>
                         <div className={styles.button}>
                             <span>Continuar leyendo</span>
                             <div>
