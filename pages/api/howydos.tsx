@@ -9,7 +9,7 @@ export default async function getHyds() {
         const response = await notion.databases.query({
             database_id: databaseId,
             filter: {
-                property: 'Category',
+                property: 'Tags',
                 multi_select: {
                     contains: 'tip'
                     
