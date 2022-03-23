@@ -1,6 +1,7 @@
 import styles from '@components/Banner/Banner.module.css'
 import CardHype from '@components/CardHype/CardHype';
 import Divider from '@components/Divider/Divider';
+import Image from 'next/image'
 
 const hype = '/images/CamisetaIND.jpg'
 const img = '/images/Dog.jpg';
@@ -22,16 +23,13 @@ const nets = [
 function Banner() {
   return (
     <div className={styles.banner}>
-            <div className={styles.sponsors}>
-        + Add Colaborator or Auspiciants
-      </div>
       <div className={styles.hype}>
         <CardHype img={hype} />
       </div>
       <Divider />
       <div className={styles.profile}>
         <div className={styles.dot}>
-          <img src={img} width={72} height={72} />
+          <Image src={img} width={72} height={72} alt={'hype'} />
         </div>
         <div className={styles.boxText}>
           <p>Luis Enrique Ortiz Rivera</p>
@@ -46,6 +44,9 @@ function Banner() {
             )
           })}
         </div>
+      </div>
+      <div className={styles.sponsors}>
+        + Add Colaborator or Auspiciants
       </div>
     </div>
   )
