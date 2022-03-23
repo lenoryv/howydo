@@ -7,13 +7,16 @@ type LayoutProps = {
   children?: React.ReactNode
 }
 
+
+
 function Layout({ children }: LayoutProps) {
   return (
     <React.Fragment>
       <Navbar />
-      <Sidenav/>
+      <Sidenav 
+      />
       {children}
-      <Banner/>
+      <Banner />
     </React.Fragment>
   )
 }
