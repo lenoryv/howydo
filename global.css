@@ -1,10 +1,14 @@
 /**
-* Hi curious student! :)
 * This a CSS Trick to keep the footer at the bottom.
 * Find out more modern CSS tricks at:
 * https://moderncss.dev/
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
     margin: 0;
 }
