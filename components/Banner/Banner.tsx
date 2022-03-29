@@ -22,7 +22,7 @@ const nets = [
 
 function Banner() {
   return (
-    <div className={styles.banner}>
+    <div className="h-auto md:w-64 mt-0 md:ml-0 md:m-6 md:col-start-3 md:col-end-4 md:row-start-2 md:row-end-3 m-6 bg-sky-50 rounded-md p-4 flex flex-col justify-between">
       <div className={styles.hype}>
         <CardHype img={hype} />
       </div>
