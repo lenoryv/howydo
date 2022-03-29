@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@components/Navbar/Navbar'
 import Sidenav from '@components/Sidenav/Sidenav'
 import Banner from '@components/Banner/Banner'
+import Sidebar from '@components/Sidebar/Sidebar'
 
 type LayoutProps = {
   children?: React.ReactNode
@@ -13,8 +14,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <React.Fragment>
       <Navbar />
-      <Sidenav 
-      />
+      <Sidebar />
       {children}
       <Banner />
     </React.Fragment>
