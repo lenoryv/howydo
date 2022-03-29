@@ -1,7 +1,7 @@
 const { Client } = require('@notionhq/client');
 
 function Details({ howydo }) {
-    console.log('Props: ', howydo)
+    // console.log('Props: ', howydo)
     return (
         <div>
             <h1 className="text-3xl font-bold underline">

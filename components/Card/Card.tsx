@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-const arrowIcon = '/icons/arrow-24.png';
-
 function Card({ howydos }) {
     return (
         <React.Fragment>

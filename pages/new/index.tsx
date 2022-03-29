@@ -1,6 +1,5 @@
 import Card from "@components/Card/Card";
 import Layout from "@components/Layout/Layout";
-import { useApp } from '@components/Hooks/Hooks';
 
 const { Client } = require('@notionhq/client');
 
@@ -8,7 +7,6 @@ const { Client } = require('@notionhq/client');
 
 function New({howydos}) {
 
-    const { tag, setTag} = useApp();
     return (
         <Layout>
             <div className="m-6 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 row-star-3 row-end-4">
