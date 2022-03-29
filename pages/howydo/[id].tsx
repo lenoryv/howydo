@@ -1,5 +1,3 @@
-import { GetStaticProps } from "next";
-import { useRouter } from "next/router";
 const { Client } = require('@notionhq/client');
 
 function Details({ howydo }) {
@@ -26,7 +24,7 @@ export async function getStaticPaths() {
                 params: { id: data.properties.Page.relation[0].id }
             }
         })
-        console.log('Paths: ', paths);
+        // console.log('Paths: ', paths);
         return {
             paths,
             fallback: true // false or 'blocking'
@@ -45,7 +43,7 @@ export async function getStaticProps(context) {
     console.log('ID: ', pageId);
     try {
         const response = await notion.pages.retrieve({ page_id: pageId });
-        console.log('Page: ', response.id);
+        // console.log('Page: ', response.id);
         // Pass post data to the page via props
         return {
             props: {

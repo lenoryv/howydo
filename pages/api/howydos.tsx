@@ -16,7 +16,7 @@ export default async function getHyds() {
                 }
             },
         });
-        console.log('Res: ', response.results);
+        // console.log('Res: ', response.results);
         return {
             props: {
               howydos: response.results,
