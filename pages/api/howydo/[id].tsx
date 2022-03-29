@@ -1,7 +1,6 @@
 const { Client } = require('@notionhq/client');
 
 function Details({ howydo }) {
-    // console.log('Props: ', howydo)
     return (
         <div>
             <h1 className="text-3xl font-bold underline">
@@ -24,7 +23,7 @@ export async function getStaticPaths() {
                 params: { id: data.properties.Page.relation[0].id }
             }
         })
-        // console.log('Paths: ', paths);
+        console.log('Paths: ', paths);
         return {
             paths,
             fallback: true // false or 'blocking'
@@ -40,10 +39,9 @@ export async function getStaticProps(context) {
     // If the route is like /posts/1, then params.id is 1
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
     const pageId = context.params.id;
-    console.log('ID: ', pageId);
+    console.log('pageId: ', pageId);
     try {
         const response = await notion.pages.retrieve({ page_id: pageId });
-        // console.log('Page: ', response.id);
         // Pass post data to the page via props
         return {
             props: {
