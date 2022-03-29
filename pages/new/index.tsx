@@ -1,8 +1,6 @@
 import Card from "@components/Card/Card";
 import Layout from "@components/Layout/Layout";
-import StylePage from "@components/StylePage/StylePage";
 import { useApp } from '@components/Hooks/Hooks';
-import { useState } from "react";
 
 const { Client } = require('@notionhq/client');
 
@@ -12,13 +10,12 @@ function New({howydos}) {
 
     const { tag, setTag} = useApp();
     return (
-        <Layout
-        >
-            <StylePage>
+        <Layout>
+            <div className="m-6 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 row-star-3 row-end-4">
                 <Card 
                     howydos={howydos}
                 />
-            </StylePage>
+            </div>
         </Layout>);
 }
 
