@@ -14,12 +14,10 @@ function Card({ howydos }) {
                         <h3 className="font-mono text-sm text-gray-400">{howydo.properties.Date.date.start}</h3>
                         <p className="my-4 font-normal font-sans text-gray-700 dark:text-gray-400">{howydo.properties.Description.rich_text[0].plain_text}</p>
                         <Link href={'/howydo/' + howydo.properties.Page.relation[0].id}>
-                            <div className="h-10 w-44 flex justify-between px-4 border rounded-full hover:bg-gray-300 cursor-pointer">
-                                <span className="flex items-center font-light text-sm">Continuar leyendo</span>
-                                <div className="flex items-center">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                                </div>
-                            </div>
+                            <button type="button" className="items-center font-light text-sm h-10 w-44 flex justify-between px-4 border rounded-full hover:bg-gray-300 cursor-pointer">
+                                Continuar leyendo
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                            </button>
                         </Link>
                     </div>
                 )
