@@ -5,12 +5,12 @@ const { Client } = require('@notionhq/client');
 
 // Initializing a client
 
-function New({howydos}) {
+function New({ howydos }) {
 
     return (
         <Layout>
             <div className="m-6 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 row-star-3 row-end-4">
-                <Card 
+                <Card
                     howydos={howydos}
                 />
             </div>
@@ -40,7 +40,6 @@ export async function getStaticProps() {
 
     } catch (error) {
         console.log('Error al obtener params by tags')
-
     }
 }
 
