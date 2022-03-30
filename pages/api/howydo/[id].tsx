@@ -23,13 +23,12 @@ export async function getStaticPaths() {
                 params: { id: data.properties.Page.relation[0].id }
             }
         })
-        console.log('Paths: ', paths);
         return {
             paths,
             fallback: true // false or 'blocking'
         };
     } catch (error) {
-        console.error('Error al Obtener Path');
+        console.error('Error al obtener Path');
     }
 
 }
@@ -39,7 +38,6 @@ export async function getStaticProps(context) {
     // If the route is like /posts/1, then params.id is 1
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
     const pageId = context.params.id;
-    console.log('pageId: ', pageId);
     try {
         const response = await notion.pages.retrieve({ page_id: pageId });
         // Pass post data to the page via props
