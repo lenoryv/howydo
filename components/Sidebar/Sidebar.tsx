@@ -2,8 +2,8 @@ import { MdTipsAndUpdates } from "react-icons/md";
 
 function Sidebar() {
     return (
-        <aside className="md:h-full md:sticky md:top-16 md:col-start-1 md:w-64 md:row-start-2 md:col-end-2 w-screen row-star-2 row-end-3 z-10" aria-label="Sidebar">
-            <div className="md:sticky md:top-14 md:px-2 md:py-4 overflow-y-auto p-6 bg-gray-50 rounded dark:bg-gray-800">
+        <aside className="md:h-full md:sticky md:top-16 md:col-start-1 md:w-64 md:row-start-2 md:col-end-2 w-screen row-star-2 row-end-3 z-10 bg-gray-50" aria-label="Sidebar">
+            <div className="md:sticky md:top-14 md:px-2 md:py-4 overflow-y-auto p-6 rounded dark:bg-gray-800">
                 <ul className="space-y-2">
                     <li>
                         <a href="/new" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
