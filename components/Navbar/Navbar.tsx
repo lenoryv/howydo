@@ -6,7 +6,7 @@ function Navbar() {
     const [showNav, setShowNav] = useState(false);
 
     return (
-        <nav className="sticky top-0 h-14 bg-l-black z-20 px-6 sm:px-6 py-2.5 md:col-span-3">
+        <nav className="sticky top-0 h-14 bg-l-black z-50 px-6 sm:px-6 py-2.5 md:col-span-3">
             <div className="container flex flex-wrap justify-between items-center">
                 <a 
                 className="flex items-center">
@@ -30,7 +30,7 @@ function Navbar() {
                     " bottom-0 md:static fixed top-14 md:flex md:space-x-2 items-center bg-l-black md:w-auto w-screen md:text-gray-500 text-white md:space-y-0 space-y-5 transition-left"
                 }>
                     <NavItem content="Home" href="/" />
-                    <NavItem content="Contact" href="/contact" />
+                    <NavItem content="Contact" href="#contact" />
                     <NavItem content="About" href="/about" />
                 </ul>
             </div>
