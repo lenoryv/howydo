@@ -1,10 +1,6 @@
-import Layout from "@components/Layout/Layout";
-
 function AboutPage() {
   return (
-    <Layout>
-        About
-    </Layout>
+    <>About Me</>
   );
 }
 export default AboutPage;
