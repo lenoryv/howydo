@@ -1,11 +1,11 @@
-import Layout from "@components/Layout/Layout"
-
+import { useApp } from 'hooks/useHowydo';
 
 function HomePage() {
+
   return (
-    <Layout>
-      Hola Mundo
-    </Layout>
+      <div>
+        Is the Home
+      </div>
   )
 }
 
